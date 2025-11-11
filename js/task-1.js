@@ -1,10 +1,10 @@
-const getUserNames = users => users
+const getUserName = users => users
   
-  .map(user => user.name);
+  .flatmap(user => user.name);
 
 
 console.log(
-    getUserNames([
+    getUserName([
     {
       name: "Moore Hensley",
       email: "moorehensley@indexia.com",
@@ -38,7 +38,7 @@ console.log(
     {
       name: "Sheree Anthony",
       email: "shereeanthony@kog.com",
-      balance: 2764
+      balance: 2764,
     },
   ])
   ); // ["Moore Hensley", "Sharlene Bush", "Ross Vazquez", "Elma Head", "Carey Barr", "Blackburn Dotson", "Sheree Anthony"]

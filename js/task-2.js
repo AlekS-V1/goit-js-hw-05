@@ -1,6 +1,6 @@
 const getUsersWithFriend = (users, friendName) => users
   
-  .filter(user => map.friends
+  .filter(user => user.friends
 
     .includes(friendName));
     
@@ -37,7 +37,7 @@ const allUsers = [
     }
   ];
   
-  console.log(getUsersWithFriend(allUsers, "Briana Decker ")); 
+  console.log(getUsersWithFriend(allUsers, "Briana Decker")); 
   // [
   //   {
   //     name: "Sharlene Bush",
@@ -61,5 +61,5 @@ const allUsers = [
   //   }
   // ]
   
-  console.log(getUsersWithFriend(allUsers, "Adrian Cross" ) ); // []
+  console.log(getUsersWithFriend(allUsers, "Adrian Cross" )); // []
   
